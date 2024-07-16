@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Calaculator</h1>
+
+    <div class="cointainer">
+        <div class="display">
+            <input type="text" value="" id="display">
+        </div>
+        <div>
+            <input type="button" class="bnt" value="AC"  onclick= "document.getElementById('display').value =  '';">
+            <input type="button" class="bnt" value="DEL" onclick= "document.getElementById('display').value = document.getElementById('display').value.slice(0,-1);">
+            <input type="button" class="bnt" value="/" onclick="document.getElementById('display').value +='/' ;">
+            <input type="button" class="bnt" value="*" onclick="document.getElementById('display').value +='*' ; ">
+        </div>
+        <div>
+            <input type="button" class="bnt" value="7" onclick= "document.getElementById('display').value +=  '7';">
+            <input type="button" class="bnt" value="8" onclick= "document.getElementById('display').value +=  '8'; " >
+            <input type="button" class="bnt" value="9"onclick= "document.getElementById('display').value +=  '9'; " >
+            <input type="button" class="bnt" value="-" onclick="document.getElementById('display').value +='-' ; ">
+        </div>        <div>
+            <input type="button" class="bnt" value="4" onclick= "document.getElementById('display').value +=  '4'; " >
+            <input type="button" class="bnt" value="5"onclick= "document.getElementById('display').value +=  '5'; " >
+            <input type="button" class="bnt" value="6"onclick= "document.getElementById('display').value +=  '6'; " >
+            <input type="button" class="bnt" value="+"onclick="document.getElementById('display').value +='+' ; ">
+        </div>        <div>
+            <input type="button" class="bnt" value="1"  onclick= "document.getElementById('display').value +=  '1'; " >
+            <input type="button" class="bnt" value="2"  onclick= "document.getElementById('display').value += '2';">
+            <input type="button" class="bnt" value="3" onclick="document.getElementById('display').value += '3';">
+            <input type="button" class="bnt" value="." onclick= "document.getElementById('display').value +=  '.'; " >
+        </div>        <div>
+            <input type="button" class="bnt" value="0"onclick= "document.getElementById('display').value +=  '0'; " >
+            <input type="button" class="bnt" value="00" onclick= "document.getElementById('display').value +=  '00'; " >
+           
+            <input type="button" class="bnt0" value="=" onclick="document.getElementById('display').value = eval(display.value) ;">
+        </div>
+
+
+
+    </div>
+
+    
+</body>
+</html>
